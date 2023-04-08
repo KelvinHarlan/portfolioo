@@ -16,42 +16,55 @@ function menuOption() {
 
 }
 let index = 2;
+const skillCount = 9;
+const intervalTime = 3000;
+const imagePath = './imagens/';
 
-let skillsName = ['bootstrap','Bulma & Sass', 'CSS', 'Express', 'Git', 'HTML', 'JavaScript', 'NodeJs', 'Python' ];
+const skillsName = [
+  'bootstrap',
+  'Bulma & Sass',
+  'CSS',
+  'Express',
+  'Git',
+  'HTML',
+  'JavaScript',
+  'NodeJs',
+  'Python'
+];
 
-function skillsLogos(){
-    let img = document.querySelector('.img-box img');
-    img.src = `./imagens/0${index}.jpg`;
-   
-    /*insert name*/ 
-    let insertName = document.querySelector('.skill-title');
-    if(index <= 9){
-        insertName.innerText =(skillsName[index -1])
-
-    }
-       /*insert logo*/
-    if(index < 9){
-        index +=1
-       
-
-    }
-    else{
-        index = 1;
-        
-    }
-  
-    
-    
-}setInterval(skillsLogos, 3000)
-
-function left(){
-    let img = document.querySelector('.img-box img');
-    index > 1 ? img.src = `./imagens/0${index -=1}.jpg` : img.src = `./imagens/0${index =9}.jpg`;
-   
+function setSkillLogo() {
+  const img = document.querySelector('.img-box img');
+  img.src = `${imagePath}0${index}.jpg`;
 }
 
-function right(){
-    let img = document.querySelector('.img-box img');
-    index < 9 ? img.src = `./imagens/0${index +=1}.jpg` : img.src = `./imagens/0${index =1}.jpg`;
-    
+function setSkillName() {
+  const skillTitle = document.querySelector('.skill-title');
+  const skillIndex = index - 1;
+  if (skillIndex >= 0 && skillIndex < skillsName.length) {
+    skillTitle.innerText = skillsName[skillIndex];
+  }
 }
+
+function changeSkillLogo(direction) {
+  index += direction;
+  if (index < 1) {
+    index = skillCount;
+  } else if (index > skillCount) {
+    index = 1;
+  }
+  setSkillLogo();
+  setSkillName();
+}
+
+function left() {
+  changeSkillLogo(-1);
+}
+
+function right() {
+  changeSkillLogo(1);
+}
+
+setInterval(function() {
+  changeSkillLogo(1);
+}, intervalTime);
+
