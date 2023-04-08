@@ -244,7 +244,8 @@ body {
     margin-left: 5px;
     text-transform: capitalize;
 }
-.skill-title{
+
+.skill-title {
     margin-bottom: 5px;
     font-size: 1em;
     text-align: center;
@@ -303,3 +304,19 @@ body {
     height: auto;
 }
 
+.selectedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.selectedContainer .selected {
+    margin: 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+
+}

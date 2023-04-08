@@ -21,50 +21,52 @@ const intervalTime = 3000;
 const imagePath = './imagens/';
 
 const skillsName = [
-  'bootstrap',
-  'Bulma & Sass',
-  'CSS',
-  'Express',
-  'Git',
-  'HTML',
-  'JavaScript',
-  'NodeJs',
-  'Python'
+    'bootstrap',
+    'Bulma & Sass',
+    'CSS',
+    'Express',
+    'Git',
+    'HTML',
+    'JavaScript',
+    'NodeJs',
+    'Python'
 ];
 
 function setSkillLogo() {
-  const img = document.querySelector('.img-box img');
-  img.src = `${imagePath}0${index}.jpg`;
+    const img = document.querySelector('.img-box img');
+    img.src = `${imagePath}0${index}.jpg`;
 }
 
 function setSkillName() {
-  const skillTitle = document.querySelector('.skill-title');
-  const skillIndex = index - 1;
-  if (skillIndex >= 0 && skillIndex < skillsName.length) {
-    skillTitle.innerText = skillsName[skillIndex];
-  }
+    const skillTitle = document.querySelector('.skill-title');
+    const skillIndex = index - 1;
+    if (skillIndex >= 0 && skillIndex < skillsName.length) {
+        skillTitle.innerText = skillsName[skillIndex];
+    }
 }
 
+
+
 function changeSkillLogo(direction) {
-  index += direction;
-  if (index < 1) {
-    index = skillCount;
-  } else if (index > skillCount) {
-    index = 1;
-  }
-  setSkillLogo();
-  setSkillName();
+    index += direction;
+    if (index < 1) {
+        index = skillCount;
+    } else if (index > skillCount) {
+        index = 1;
+    }
+    setSkillLogo();
+    setSkillName();
 }
 
 function left() {
-  changeSkillLogo(-1);
+    changeSkillLogo(-1);
 }
 
 function right() {
-  changeSkillLogo(1);
+    changeSkillLogo(1);
 }
 
-setInterval(function() {
-  changeSkillLogo(1);
+setInterval(function () {
+    changeSkillLogo(1);
 }, intervalTime);
 
