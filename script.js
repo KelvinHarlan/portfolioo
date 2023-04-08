@@ -15,7 +15,7 @@ function menuOption() {
     }
 
 }
-let index = 2;
+let index = 1;
 const skillCount = 9;
 const intervalTime = 3000;
 const imagePath = './imagens/';
@@ -45,6 +45,16 @@ function setSkillName() {
     }
 }
 
+function circleSelected() {
+    const circles = document.querySelectorAll('.selected');
+    const circle = document.querySelector(`.selectedContainer .selected-${index}`)
+    for(i = 0; i < circles.length; i++){
+      circles[i].style.backgroundColor = 'transparent';
+    }
+    circle.style.backgroundColor = '#a200ff';
+
+   
+}
 
 
 function changeSkillLogo(direction) {
@@ -56,6 +66,7 @@ function changeSkillLogo(direction) {
     }
     setSkillLogo();
     setSkillName();
+    circleSelected();
 }
 
 function left() {

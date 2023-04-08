@@ -250,6 +250,30 @@ body {
     font-size: 1em;
     text-align: center;
 }
+@keyframes animationLine{
+   0%{
+    width:0;
+   }
+   50%{
+    width: 15%;
+   }
+   100%{
+    width: 30%;
+   }
+    
+}
+
+@keyframes animationLine02{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 5%;
+    }
+    100%{
+        width: 10%;
+    }
+}
 
 .line {
     height: 2px;
@@ -257,6 +281,16 @@ body {
     display: block;
     background-color: #a200ff;
     margin: 0 0 10px 0;
+    animation: animationLine 2s linear infinite;
+    
+}
+.line-02{
+    height: 2px;
+    width: 10%;
+    display: block;
+    background-color: #ffffff;
+    margin: 0 0 10px 0;
+    animation: animationLine02 2s linear infinite;
 }
 
 .skill-box {
