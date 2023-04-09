@@ -78,7 +78,8 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #7d00c580;
+    background-color: #fff;
+    color: #000;
 }
 
 /*profile*/
@@ -361,6 +362,11 @@ body {
 .soft-skills-cards ul{
     padding: 0;
 }
+
+.soft-skills-cards ul li{
+    list-style: none;
+}
+
 
 .card{
   display: flex;
