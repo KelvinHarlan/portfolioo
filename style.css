@@ -281,7 +281,7 @@ body {
     display: block;
     background-color: #a200ff;
     margin: 0 0 10px 0;
-    animation: animationLine 2s linear infinite;
+    animation: animationLine 4s linear;
     
 }
 .line-02{
@@ -290,7 +290,7 @@ body {
     display: block;
     background-color: #ffffff;
     margin: 0 0 10px 0;
-    animation: animationLine02 2s linear infinite;
+    animation: animationLine02 4s linear ;
 }
 
 .skill-box {
@@ -352,5 +352,30 @@ body {
     border-radius: 50%;
     width: 8px;
     height: 8px;
+
+}
+
+/*Section-03*/
+/* Hard Skills*/
+
+.soft-skills-cards ul{
+    padding: 0;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card h2{
+    text-align: center;
+}
+.card img{
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
 
 }

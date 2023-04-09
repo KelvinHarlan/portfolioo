@@ -21,7 +21,7 @@ const intervalTime = 3000;
 const imagePath = './imagens/';
 
 const skillsName = [
-    'bootstrap',
+    'Bootstrap',
     'Bulma & Sass',
     'CSS',
     'Express',
@@ -48,12 +48,10 @@ function setSkillName() {
 function circleSelected() {
     const circles = document.querySelectorAll('.selected');
     const circle = document.querySelector(`.selectedContainer .selected-${index}`)
-    for(i = 0; i < circles.length; i++){
-      circles[i].style.backgroundColor = 'transparent';
+    for (i = 0; i < circles.length; i++) {
+        circles[i].style.backgroundColor = 'transparent';
     }
     circle.style.backgroundColor = '#a200ff';
-
-   
 }
 
 
