@@ -373,15 +373,42 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px 0 10px 0;
 }
 
 .card h2{
     text-align: center;
 }
+
+@keyframes animationImgSkills{
+    0% {
+       
+    }
+    25%{
+        rotate: -2deg;
+    }
+
+  
+
+
+  
+}
+
+
 .card img{
-    width: 90vw;
+    width: 70vw;
     max-width: 400px;
     height: auto;
     border-radius: 10px;
+    animation: animationImgSkills 3s linear infinite;
 
+}
+
+/* observer*/
+.init-hidden{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+.init-hidden-off{
+    opacity: 1;
 }

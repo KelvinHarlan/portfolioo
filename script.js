@@ -79,3 +79,18 @@ setInterval(function () {
     changeSkillLogo(1);
 }, intervalTime);
 
+
+
+
+
+/*Functttion observer Itens*/
+
+const observer = new IntersectionObserver(entries =>{
+    entries[0].target.classList.add('init-hidden-off')
+},{
+    threshold: 1
+})
+
+Array.from(document.querySelectorAll('.init-hidden')).forEach(element =>{
+    observer.observe(element);
+})
