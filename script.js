@@ -91,6 +91,6 @@ const observer = new IntersectionObserver(entries =>{
     threshold: 1
 })
 
-Array.from(document.querySelectorAll('.init-hidden')).forEach(element =>{
+Array.from(document.querySelectorAll('.init-hidden')).map(element =>{
     observer.observe(element);
 })
