@@ -44,6 +44,16 @@ body {
     }
 }
 
+@keyframes animationNav{
+    0%,100%{
+        margin-right: 0;
+    }
+    50%{
+        margin-right: 60vw;
+    }
+    
+}
+
 .navbar .itens {
     opacity: 1;
     display: none;
@@ -65,6 +75,23 @@ body {
     list-style: none;
     padding: 5px;
 
+}
+
+.navbar ul .li-1{
+    animation-name: animationNav;
+    animation-duration: 0.5s;
+}
+.navbar ul .li-2{
+    animation-name: animationNav;
+    animation-duration: 1s;
+}
+.navbar ul .li-3{
+    animation-name: animationNav;
+    animation-duration: 1.5s;
+}
+.navbar ul .li-4{
+    animation-name: animationNav;
+    animation-duration: 2s;
 }
 
 .navbar ul li a {
