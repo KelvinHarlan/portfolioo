@@ -11,6 +11,10 @@ body {
 
 }
 
+
+/*---------------Start mobile---------------*/
+
+
 @media(max-width: 425px) {
 
     /*Navbar*/
@@ -366,7 +370,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid #fff;
+       
 
 
     }
@@ -460,3 +464,450 @@ body {
 
 /*Start desktop*/
 
+@media(min-width: 426px) {
+
+    /*Navbar*/
+    .menu-option {
+        display: none;
+        align-self: flex-end;
+        margin: 15px;
+        border-radius: 5px;
+    }
+
+    .menu-option a {
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        background-color: #a200ff80;
+        cursor: pointer;
+
+    }
+
+    .navbar {
+        background-color: #000;
+        border-radius: 5px;
+
+    }
+
+    @keyframes animation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes animationNav {
+
+        0%{
+            margin-left:100vw;
+        }
+
+        
+
+    }
+
+    .navbar .itens {
+        opacity: 1;
+        animation-name: animation;
+        animation-duration: 1s;
+        display: flex;
+
+
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: end;
+
+
+    }
+
+    .navbar ul li {
+        list-style: none;
+        padding: 5px;
+
+    }
+
+    .navbar ul .li-1 {
+        animation-name: animationNav;
+        animation-duration: 0.5s;
+
+    }
+
+    .navbar ul .li-2 {
+        animation-name: animationNav;
+        animation-duration: 1s;
+    }
+
+    .navbar ul .li-3 {
+        animation-name: animationNav;
+        animation-duration: 1.5s;
+    }
+
+    .navbar ul .li-4 {
+        animation-name: animationNav;
+        animation-duration: 2s;
+    }
+
+    .navbar ul li a {
+        min-width: 100px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 2px 5px 5px #a200ff80;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+
+    .navbar ul li a:hover {
+        color: #a200ff;
+        box-shadow: -2px -5px 10px #a200ff80;
+    }
+
+    /*profile*/
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-profile{
+        width: 300px;
+        border-radius: 10px;
+        padding-top: 50px;
+    }
+    .container{
+        width: 300px;
+        height: 410px;
+       
+    }
+
+
+
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        width: 100%;
+
+    }
+
+    .profile .image-profile {
+        width: 150px;
+    }
+
+    @keyframes animation-name {
+        to {
+            margin: 15px 0 0 -50px;
+        }
+
+        from {
+            margin: 15px 0 0 -101vw;
+        }
+    }
+
+    @keyframes animation-function-name {
+        to {
+            margin-right: -50px;
+        }
+
+        from {
+            margin: 101vw;
+        }
+    }
+
+    .name {
+        margin: 15px 0 0 -50px;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        animation-name: animation-name;
+        animation-duration: .5s;
+
+
+    }
+
+    .function-name {
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        margin-right: -50px;
+        animation-name: animation-function-name;
+        animation-duration: .5s;
+    }
+
+    @keyframes animation-image {
+        0% {
+            box-shadow: 0px 0px 35px #a200ff80;
+        }
+
+        100% {
+            box-shadow: 0px 0px 35px #a200ff;
+        }
+    }
+
+    .image-border {
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 35px #a200ff80;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        animation-name: animation-image;
+        animation-duration: 2s;
+    }
+
+    .efect {
+        background-color: #a200ff80;
+        height: 40px;
+        width: 100%;
+    }
+
+    /*Section-01*/
+    /*Profile contact*/
+
+    .profile .profile-contact {
+        margin-top: 20px;
+        width: 200px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile .profile-contact li {
+        padding: 10px;
+        color: #fff;
+        list-style: none;
+
+    }
+
+    .profile .profile-contact li a {
+        display: block;
+        text-align: center;
+        width: 150px;
+        background-color: #a200ff80;
+        color: #fff;
+        padding: 10px 50px;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 30px #a200ff80;
+
+    }
+
+    @keyframes animation-contact {
+        0% {
+            rotate: 2deg;
+        }
+
+        25% {
+            rotate: -2deg;
+        }
+
+        50% {
+            rotate: 0deg;
+        }
+
+        75% {
+            rotate: 2deg;
+        }
+
+        100% {
+            rotate: -2deg;
+        }
+
+        125% {
+            rotate: 0;
+        }
+    }
+
+    .profile .profile-contact li a:hover {
+        background-color: #fff;
+        color: #000;
+        transition: 0.5s;
+        animation-name: animation-contact;
+        animation-duration: 0.3s;
+    }
+
+
+    .profile .profile-contact li i {
+        margin: 0 5px;
+    }
+
+
+    /*Section-02*/
+    /*Skills*/
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+    }    
+
+    .skills-title {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: #a200ff80;
+        border-radius: 5px;
+        padding: 5px;
+        
+      
+    
+       
+    }
+
+    .skill-title {
+        margin-bottom: 5px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+ 
+
+ 
+
+    .skill-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 100vw;
+        max-width: 425px;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .skill-card a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: transparent;
+        color: #fff;
+        width: 30px;
+    }
+
+    .skill-card a:hover {
+        color: #a200ff;
+    }
+
+    .skill-card .img-box {
+        height: 100px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .skill-card .img-box img {
+        width: 100vw;
+        max-width: 400px;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .selectedContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .selectedContainer .selected {
+        margin: 5px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+
+    }
+
+    /*Section-03*/
+    /* soft Skills*/
+
+    
+
+    .soft-skills-cards ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .soft-skills-cards ul li {
+        list-style: none;
+    }
+
+
+    .card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0 10px 0;
+        max-width: 200px;
+        margin: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #a200ff80;
+    }
+
+    .card:hover{
+        box-shadow: 0px 0px 10px #ffffff80;
+
+    }
+
+    .card h2 {
+        text-align: center;
+    }
+
+    @keyframes animationImgSkills {
+        0% {}
+
+        25% {
+            rotate: -2deg;
+        }
+
+
+
+
+
+    }
+
+
+    .card img {
+        width: 70vw;
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+        animation: animationImgSkills 3s linear infinite;
+
+    }
+
+
+    /* observer*/
+    .init-hidden {
+        opacity: 1;
+        transition: opacity 1s linear;
+    }
+
+    .init-hidden-off {
+        opacity: 1;
+    }
+}
