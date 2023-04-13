@@ -16,7 +16,7 @@ function menuOption() {
 
 }
 let index = 1;
-const skillCount = 9;
+const skillCount = 12;
 const intervalTime = 3000;
 const imagePath = './imagens/';
 
@@ -29,7 +29,10 @@ const skillsName = [
     'HTML',
     'JavaScript',
     'NodeJs',
-    'Python'
+    'Python',
+    'Reactjs',
+    'TypeScript',
+    'React Native'
 ];
 
 function setSkillLogo() {
