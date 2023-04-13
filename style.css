@@ -10,8 +10,9 @@ body {
     color: #a200ff;
 
 }
-.rocket-box{
-    display:none;
+
+.rocket-box {
+    display: none;
 }
 
 
@@ -20,7 +21,7 @@ body {
 
 @media(max-width: 426px) {
 
-   
+
 
     /*Navbar*/
     .menu-option {
@@ -57,11 +58,11 @@ body {
 
     @keyframes animationNav {
 
-        0%{
-            margin-left:100vw;
+        0% {
+            margin-left: 100vw;
         }
 
-        
+
 
     }
 
@@ -375,7 +376,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-       
+
 
 
     }
@@ -387,12 +388,12 @@ body {
         height: auto;
     }
 
-    .fa-circle-check{
+    .fa-circle-check {
         color: #ffffff;
         font-size: 1.2em;
-        align-self:center;
+        align-self: center;
         margin: 10px;
-      }
+    }
 
     .selectedContainer {
         display: flex;
@@ -481,7 +482,7 @@ body {
 
 @media(min-width: 426px) {
 
-    body{
+    body {
         display: flex;
         flex-direction: column;
     }
@@ -521,11 +522,11 @@ body {
 
     @keyframes animationNav {
 
-        0%{
-            margin-left:100vw;
+        0% {
+            margin-left: 100vw;
         }
 
-        
+
 
     }
 
@@ -592,22 +593,24 @@ body {
     }
 
     /*profile*/
-    .main{
+    .main {
         display: flex;
         flex-direction: column;
         max-width: 1280px;
         align-self: center;
         justify-self: center;
     }
-    .container-profile{
+
+    .container-profile {
         width: 300px;
         border-radius: 10px;
         padding-top: 50px;
     }
-    .container{
+
+    .container {
         width: 300px;
         height: 410px;
-       
+
     }
 
 
@@ -766,31 +769,28 @@ body {
     }
 
 
-     /*------------Rocket box-----------*/
-    
-     .profile-logo-box{
+    /*------------Rocket box-----------*/
+
+    .profile-logo-box {
         display: flex;
-     }
-     .rocket-box h2{
+    }
+
+    .rocket-box h2 {
         text-transform: uppercase;
         max-width: 700px;
         text-align: center;
-     }
-    
-     .rocket-box{
+    }
+    .rocket-box {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 20px;
-        
     }
-
-    .rocket-box img{
+    .rocket-box img {
         width: 400px;
         max-width: 400px;
-      
     }
 
 
@@ -801,12 +801,12 @@ body {
     /*Section-02*/
     /*Skills*/
 
-    .skills-container{
+    .skills-container {
         display: flex;
         flex-direction: column;
         margin: 10px;
         justify-content: center;
-    }    
+    }
 
     .skills-title {
         font-size: 1.5em;
@@ -816,10 +816,10 @@ body {
         background-color: #a200ff80;
         border-radius: 5px;
         padding: 5px;
-        
-      
-    
-       
+
+
+
+
     }
 
     .skill-title {
@@ -828,9 +828,9 @@ body {
         text-align: center;
     }
 
- 
 
- 
+
+
 
     .skill-box {
         display: flex;
@@ -896,7 +896,7 @@ body {
     /*Section-03*/
     /* soft Skills*/
 
-    
+
 
     .soft-skills-cards ul {
         padding: 0;
@@ -924,7 +924,7 @@ body {
         box-shadow: 0px 0px 10px #a200ff
     }
 
-    .card:hover{
+    .card:hover {
         box-shadow: 0px 0px 30px #ffffff;
         border: 1px solid #fff;
         transition: .5s;
@@ -958,14 +958,14 @@ body {
 
     }
 
-  .fa-circle-check{
-    color: #ffffff;
-    font-size: 1.2em;
-    align-self: flex-end;
-    margin: 10px;
-  }
+    .fa-circle-check {
+        color: #ffffff;
+        font-size: 1.2em;
+        align-self: flex-end;
+        margin: 10px;
+    }
 
-    
+
 
 
     /* observer*/

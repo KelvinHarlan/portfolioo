@@ -81,11 +81,6 @@ function right() {
 setInterval(function () {
     changeSkillLogo(1);
 }, intervalTime);
-
-
-
-
-
 /*Functttion observer Itens*/
 
 const observer = new IntersectionObserver(entries =>{
@@ -93,7 +88,10 @@ const observer = new IntersectionObserver(entries =>{
 },{
     threshold: 1
 })
-
 Array.from(document.querySelectorAll('.init-hidden')).map(element =>{
     observer.observe(element);
 })
+
+
+
+

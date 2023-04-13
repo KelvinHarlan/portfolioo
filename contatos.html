@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---My fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--- Fontawesome--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <!---Sobre CSS-->
+    <link rel="stylesheet" href="./contato.css">
+
+    <title>Contato</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <div class="menu-option">
+                    <a onclick="menuOption()"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <div class="itens">
+                    <li class="li-1">
+                        <a href="./index.html">Início</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="./sobre.html">Sobre</a>
+                    </li>
+                    <li class="li-3">
+                        <a href="./contatos.html">Contato</a>
+                    </li>
+                    <li class="li-4">
+                        <a href="#">Projetos</a>
+                    </li>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+    <h2 class="color">Contato</h2>
+    <div class="box-form">
+        <h1>Formulário de Contato</h1>
+        <form method="POST" action="./enviar.php"> 
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="./form.js"></script>
+</body>
