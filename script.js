@@ -115,8 +115,36 @@ const projects = [
     },
     {
         id: 1,
-        name: 'PokéDex',
-        image: 0,
+        name: 'API-Fimes',
+        image: 1,
+        typeImage:'png',
+        link: '#'
+    },
+    {
+        id: 2,
+        name: 'Calcular Nota',
+        image: 2,
+        typeImage:'png',
+        link: '#'
+    },
+    {
+        id: 3,
+        name: 'Aguarde',
+        image: `breve`,
+        typeImage:'png',
+        link: '#'
+    },
+    {
+        id: 4,
+        name: 'Aguarde',
+        image: `breve`,
+        typeImage:'png',
+        link: '#'
+    },
+    {
+        id: 5,
+        name: 'Aguarde',
+        image: `breve`,
         typeImage:'png',
         link: '#'
     },
