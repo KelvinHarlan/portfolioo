@@ -15,6 +15,7 @@ function menuOption() {
     }
 
 }
+
 let index = 1;
 const skillCount = 12;
 const intervalTime = 3000;
@@ -34,11 +35,14 @@ const skillsName = [
     'TypeScript',
     'React Native'
 ];
+/* Funcao para substituir as imagens das skills */
 
 function setSkillLogo() {
     const img = document.querySelector('.img-box img');
     img.src = `${imagePath}0${index}.jpg`;
 }
+
+/* Funcao para mudar o nome das tecnologias nas skills */
 
 function setSkillName() {
     const skillTitle = document.querySelector('.skill-title');
@@ -47,6 +51,7 @@ function setSkillName() {
         skillTitle.innerText = skillsName[skillIndex];
     }
 }
+/* Funcao para alterar o circulo, representado pela posicao da imagem*/
 
 function circleSelected() {
     const circles = document.querySelectorAll('.selected');
@@ -57,6 +62,7 @@ function circleSelected() {
     circle.style.backgroundColor = '#a200ff';
 }
 
+/*Funcao para mudar as  imagens das skills*/
 
 function changeSkillLogo(direction) {
     index += direction;
@@ -65,9 +71,13 @@ function changeSkillLogo(direction) {
     } else if (index > skillCount) {
         index = 1;
     }
-    setSkillLogo();
-    setSkillName();
-    circleSelected();
+    try {
+        setSkillLogo();
+        setSkillName();
+        circleSelected();
+    } catch {
+        false
+    }
 }
 
 function left() {
@@ -81,17 +91,63 @@ function right() {
 setInterval(function () {
     changeSkillLogo(1);
 }, intervalTime);
-/*Functttion observer Itens*/
 
-const observer = new IntersectionObserver(entries =>{
+/*Funcao para observar os itens*/
+
+const observer = new IntersectionObserver(entries => {
     entries[0].target.classList.add('init-hidden-off')
-},{
+}, {
     threshold: 1
 })
-Array.from(document.querySelectorAll('.init-hidden')).map(element =>{
+Array.from(document.querySelectorAll('.init-hidden')).map(element => {
     observer.observe(element);
-})
+});
 
 
+/* Projetos */
+const projects = [
+    {
+        id: 0,
+        name: 'PokéDex',
+        image: 0,
+        typeImage:'png',
+        link:'#'
+    },
+    {
+        id: 1,
+        name: 'PokéDex',
+        image: 0,
+        typeImage:'png',
+        link: '#'
+    },
+  
 
+];
 
+/* Renderizando projetos em tela */
+
+function startProject() {
+    let card = document.querySelector('.project-list');
+    projects.map( function (el, i ){
+        
+        const id = projects[i].id +1;
+        const name = projects[i].name;
+        const image = projects[i].image;
+        const link = projects[i].link;
+        const type = projects[i].typeImage;
+
+    card.innerHTML += `
+    <li>
+    <div class = "card-project">
+        <div class="project-id">#0${id}</div>
+        <h2>${name}</h2>
+        <img src="./imagens/imagensProjeto/${image}.${type}" alt="imagem projeto">
+        <div class="view-project-option">
+            <a href="${link}"><i class="fa-solid fa-eye"></i></a>
+        </div>
+    </div>
+    </li>`
+    });
+    
+}
+startProject()

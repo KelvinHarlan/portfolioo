@@ -1,5 +1,12 @@
-.sobre-box{
-    max-width: 500px;
+.sobre-box {
     text-align: justify;
     margin: 10px;
+    align-items: center;
+    max-width: 500px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

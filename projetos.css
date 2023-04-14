@@ -1,0 +1,205 @@
+/*----- Start Mobile-----*/
+
+@media(max-width: 768px) {
+    .my-projects-title {
+        text-align: center;
+    }
+
+    .logo-programing {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-programing img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .card-project {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 10px 0;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #a200ff;
+        border: 1px solid #a200ff;
+        background-color: #1c1c1c;
+    }
+
+    .project-box {
+        margin-top: 50px;
+    }
+
+    .project-id {
+        justify-self: flex-start;
+        align-self: flex-start;
+        padding: 5px 10px;
+        text-align: center;
+        background-color: #a200ff;
+        border-radius: 8px 0 5px 0;
+        margin: -5px;
+        border: 1px solid #a200ff;
+        font-size: 1.5em;
+    }
+
+    .cards-project ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards-project ul li {
+        list-style: none;
+    }
+
+    .cards-project ul li img {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .view-project-option {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .view-project-option a {
+        text-decoration: none;
+        color: #fff;
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+        background-color: #a200ff;
+        border-radius: 8px 0 5px 0;
+        margin: -5px;
+        border: 1px solid #a200ff;
+        font-size: 1.2em;
+    }
+}
+
+
+/*----- End Mobile -----*/
+
+
+
+/*----- Start Desktop -----*/
+
+
+
+@media(min-width: 768px) {
+    .my-projects-title {
+        text-align: center;
+    }
+
+    .logo-programing {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-programing img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .card-project {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        max-width: 250px;
+        margin: 20px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #a200ff;
+        border: 1px solid #a200ff;
+        background-color: #1c1c1c;
+    }
+
+    .card-project:hover {
+        box-shadow: 0px 0px 30px #ffffff;
+        border: 1px solid #fff;
+        transition: .5s;
+    }
+
+    .project-box {
+        margin-top: 50px;
+    }
+
+    .project-id {
+        justify-self: flex-start;
+        align-self: flex-start;
+        padding: 5px 10px;
+        text-align: center;
+        background-color: #a200ff;
+        border-radius: 8px 0 5px 0;
+        margin: -5px;
+        border: 1px solid #a200ff;
+        font-size: 1.5em;
+    }
+
+    .cards-project ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards-project ul li {
+        list-style: none;
+    }
+
+    .cards-project ul li img {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .view-project-option {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+
+    }
+
+
+    .view-project-option a {
+        text-decoration: none;
+        color: #fff;
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+        background-color: #a200ff;
+        border-radius: 8px 0 5px 0;
+        margin: -5px;
+        border: 1px solid #a200ff;
+        font-size: 1.2em;
+    }
+
+}

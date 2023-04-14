@@ -19,7 +19,7 @@ body {
 /*---------------Start mobile---------------*/
 
 
-@media(max-width: 426px) {
+@media(max-width: 768px) {
 
 
 
@@ -91,23 +91,23 @@ body {
 
     .navbar ul .li-1 {
         animation-name: animationNav;
-        animation-duration: 0.5s;
+        animation-duration: 0.2s;
 
     }
 
     .navbar ul .li-2 {
         animation-name: animationNav;
-        animation-duration: 1s;
+        animation-duration: 0.4s;
     }
 
     .navbar ul .li-3 {
         animation-name: animationNav;
-        animation-duration: 1.5s;
+        animation-duration: 0.6s;
     }
 
     .navbar ul .li-4 {
         animation-name: animationNav;
-        animation-duration: 2s;
+        animation-duration: 0.8s;
     }
 
     .navbar ul li a {
@@ -123,6 +123,11 @@ body {
     .navbar ul li a:hover {
         background-color: #fff;
         color: #000;
+    }
+
+    .active{
+        background-color: #fff !important;
+        color: #000 !important;
     }
 
     /*profile*/
@@ -480,7 +485,7 @@ body {
 
 
 
-@media(min-width: 426px) {
+@media(min-width: 768px) {
 
     body {
         display: flex;
@@ -556,23 +561,23 @@ body {
 
     .navbar ul .li-1 {
         animation-name: animationNav;
-        animation-duration: 0.5s;
+        animation-duration: 0.2s;
 
     }
 
     .navbar ul .li-2 {
         animation-name: animationNav;
-        animation-duration: 1s;
+        animation-duration: 0.4s;
     }
 
     .navbar ul .li-3 {
         animation-name: animationNav;
-        animation-duration: 1.5s;
+        animation-duration: 0.6s;
     }
 
     .navbar ul .li-4 {
         animation-name: animationNav;
-        animation-duration: 2s;
+        animation-duration: 0.8s;
     }
 
     .navbar ul li a {
@@ -591,7 +596,10 @@ body {
         color: #a200ff;
         box-shadow: -2px -5px 10px #a200ff80;
     }
-
+    .active{
+        color: #a200ff !important;
+        box-shadow: -2px -5px 10px #a200ff80 !important;
+    }
     /*profile*/
     .main {
         display: flex;
@@ -780,6 +788,7 @@ body {
         max-width: 700px;
         text-align: center;
     }
+
     .rocket-box {
         width: 100%;
         display: flex;
@@ -788,6 +797,7 @@ body {
         align-items: center;
         margin: 20px;
     }
+
     .rocket-box img {
         width: 400px;
         max-width: 400px;
