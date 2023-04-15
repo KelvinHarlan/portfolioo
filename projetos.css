@@ -203,6 +203,7 @@
         margin: -5px;
         border: 1px solid #a200ff;
         font-size: 1.2em;
+        cursor: pointer;
     }
 
 }
