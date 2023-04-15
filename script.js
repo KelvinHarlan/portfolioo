@@ -163,6 +163,7 @@ function startProject() {
         const image = projects[i].image;
         const link = projects[i].link;
         const type = projects[i].typeImage;
+       
 
     card.innerHTML += `
     <li>
@@ -171,7 +172,7 @@ function startProject() {
         <h2>${name}</h2>
         <img src="./imagens/imagensProjeto/${image}.${type}" alt="imagem projeto">
         <div class="view-project-option">
-            <a href="${link}"><i class="fa-solid fa-eye"></i></a>
+            <a src="${link}"><i class="fa-solid fa-eye"></i></a>
         </div>
     </div>
     </li>`
@@ -179,3 +180,5 @@ function startProject() {
     
 }
 startProject()
+
+
