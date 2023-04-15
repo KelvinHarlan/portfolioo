@@ -33,7 +33,6 @@
         box-shadow: 0px 0px 10px #a200ff;
         border: 1px solid #a200ff;
         background-color: #1c1c1c;
-        overflow:hidden ;
     }
 
     .project-box {
@@ -137,7 +136,6 @@
         box-shadow: 0px 0px 10px #a200ff;
         border: 1px solid #a200ff;
         background-color: #1c1c1c;
-        overflow: hidden;
     }
 
     .card-project:hover {
